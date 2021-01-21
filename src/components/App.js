@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import defaultNotes from "../notes";
+import CreateArea from "./CreateArea";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   return (
     <div>
       <Header />
-      <h1>Change!</h1>
+      <CreateArea />
       {notes.map((noteItem, index) => {
         return (
           <Note
